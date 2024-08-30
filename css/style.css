@@ -1,7 +1,16 @@
 @charset "utf-8";
 
 :root {
-
+  --font-size-header-menu : 18px;
+  --font-size-navbar-fix : 18px;
+  --font-size-card1-h1 : 35px;
+  --font-size-card1-text : 2.5vw; /* 28.28px */
+  --font-size-card2-h1 : 30px;
+  --font-size-card3-h1 : 35px;
+  --font-size-card3-text : 1.6vw; /* 18.0992px */
+  --font-size-card3-date : 1.5vw; /* 16.968pxs */
+  
+  
 }
 
 .container {
@@ -10,3 +19,9 @@
   position: relative;
 }
 
+
+/* font -  */
+
+.body{
+  font-family: Pretendard, apple-system, 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
+}
