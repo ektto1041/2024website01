@@ -1,7 +1,13 @@
 @charset "utf-8";
 
 :root {
-  --font-size-header-menu : 18px;
+  --font-size-footer-btn: 16px;
+  --font-size-copyright: 20px;
+  --font-size-footer-info: 18px;
+  --font-size-company-strong: 30px;
+  --font-size-company: 23px;
+  --font-size-desc: 30px;
+  --font-size-sticky: 18px;  --font-size-header-menu : 18px;
   --font-size-navbar-fix : 18px;
   --font-size-card1-h1 : 35px;
   --font-size-card1-text : 2.5vw; /* 28.28px */
