@@ -31,3 +31,60 @@
 .body{
   font-family: Pretendard, apple-system, 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
 }
+
+.hd {
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; */
+  background: #efe5d9;
+}
+
+.hd .hd_inner {
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 80px;
+    background: rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+}
+.hd .hd_maxWd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 6;
+}
+
+.search .btn_search{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 39px;
+  height: 100%;
+  background: url(../images/ico_search_25.png) no-repeat left center / 25px auto;
+}
+
+.blind{
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+}
+.logo {
+  display: inline-block;
+  position: relative;
+  width: 190px;
+  vertical-align: top;
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
