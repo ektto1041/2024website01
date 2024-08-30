@@ -22,6 +22,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 .container {
@@ -35,6 +40,10 @@
 .cardWrap{
   cursor: pointer;
   position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 16px 0;
+  box-shadow: 0 0 10px black;
 }
 
 .cardWrap .top{
@@ -45,6 +54,7 @@
     padding: 10.2% 7% 10.2% 10.6%;
     background: rgba(0, 0, 0, 0.8);
     font-weight: 600;
+    border-radius: 20px 20px 0 0;
 }
 
 .cardWrap span{
@@ -54,10 +64,78 @@
     z-index: 1;
 }
 
-.cardWrap img{}
+.cardWrap img{
+  border-radius: 20px;
+}
+
+.swiper3 .cardWrap .card_img img {
+  height: 35vh;
+  object-fit: cover;
+  width: 100%;
+}
 
 /* font -  */
 
-.body{
+body {
   font-family: Pretendard, apple-system, 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
+  /* height: 100%; */
 }
+
+.swiper-wrapper2 {
+  padding: 60px;
+}
+
+.swiper-wrapper2 h3 {
+  font-size: var(--font-size-card1-h1);
+  padding-bottom: 26px;
+}
+
+.card {
+  /* width: 240px; */
+  /* height: 300px; */
+
+  border: 1px solid black;
+  border-radius: 16px;
+}
+
+.swiper {
+  width: 100%;
+  height: calc(100% + 30px);
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  content: "" !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 50px;
+  height: 50px;
+}
+
+.swiper-button-prev button, .swiper-button-next button {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#left-button {
+  background: url(../images/ico_arr_left_50.png);
+  background-size: cover;
+}
+
+#right-button {
+  background: url(../images/ico_arr_right_50.png); 
+  background-size: cover;
+}
+
+/* .swiper:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: calc(100% + 30px);
+  background-color: #1e1e1e;
+  z-index: 2;
+} */
