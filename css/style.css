@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+:root {
+
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
