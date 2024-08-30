@@ -19,10 +19,39 @@
   
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1470px;
   margin: 0 auto;
   position: relative;
+}
+
+/* card */
+
+.cardWrap{
+  cursor: pointer;
+  position: relative;
+}
+
+.cardWrap .top{
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10.2% 7% 10.2% 10.6%;
+    background: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+.cardWrap span{
+    position: absolute;
+    color: white;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 
