@@ -32,6 +32,106 @@ html {
   height: 100%;
 }
 
+/* card */
+
+.cardWrap{
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  /* padding: 16px 0; */
+  box-shadow: 0 0 10px black;
+}
+
+.cardWrap .card_img {
+  transition: all 0.4s;
+}
+
+.cardWrap:hover .card_img {
+  scale: 1.1;
+}
+
+.cardWrap .top{
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10.2% 7% 10.2% 10.6%;
+    background: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    border-radius: 20px 20px 0 0;
+}
+
+.cardWrap span{
+    position: absolute;
+    color: white;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.cardWrap img{
+  border-radius: 20px;
+}
+
+
+.cardWrap .brand-logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardWrap:hover .brand-card-img{
+  scale: 1.1;
+}
+
+.cardWrap .brand-card-img{
+  transition: all 0.4s;
+}
+
+
+/* content 슬라이드부분 */
+
+
+
+.cardWrap .content-text-Wrap{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+  border-radius: 0 0 20px 20px;
+  z-index: 1;
+  padding: 4% 11.1% 2.2% 11.1%;
+  padding: 5% 5%;
+}
+
+.contentcardsize{
+  width: 330px;
+  height: 260px;
+  display: flex;
+  
+}
+/* .cardWrap .content-textWrap .content-txt{
+  TODO : CONTENTS 부분 텍스트 폰트 디테일 채우기  
+} */
+
+.cardWrap .content-textWrap .content-date{
+    font-size: 1.5vw;
+    line-height: 1;
+    display: block;
+    margin-top: 10px;
+}
+
+.swiper .swiper-slide.contents-swiper-slide{
+  width: 330px;
+  height: 260px;
+}
+
+
+/* font -  */
+
 body {
   font-family: Pretendard, apple-system, 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
 }
@@ -162,14 +262,7 @@ body {
 }
 
 /* card */
-.cardWrap{
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 16px 0;
-  box-shadow: 0 0 10px black;
-}
+
 
 .cardWrap span{
     position: absolute;
@@ -232,6 +325,8 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 1);
   border-radius: 20px;
 }
+
+
 
 .swiper-button-prev:after, .swiper-button-next:after {
   content: "" !important;

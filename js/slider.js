@@ -22,6 +22,18 @@ const swiperBrands = new Swiper('.swiper-brands', {
   slidesPerView: 'auto',
 })
 
+const swiperContents = new Swiper('.swiper-contents', {
+  direction: 'horizontal',
+  loop: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  slidesPerView: 'auto',
+})
+
 const swiper3 = new Swiper('.swiper3', {
   direction: 'horizontal',
   loop: true,
