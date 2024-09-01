@@ -32,12 +32,6 @@ html {
   height: 100%;
 }
 
-.container {
-  width: 1470px;
-  margin: 0 auto;
-  position: relative;
-}
-
 /* card */
 
 .cardWrap{
@@ -119,9 +113,9 @@ html {
   display: flex;
   
 }
-.cardWrap .content-textWrap .content-txt{
-  
-}
+/* .cardWrap .content-textWrap .content-txt{
+  TODO : CONTENTS 부분 텍스트 폰트 디테일 채우기  
+} */
 
 .cardWrap .content-textWrap .content-date{
     font-size: 1.5vw;
@@ -135,11 +129,6 @@ html {
   height: 260px;
 }
 
-.contents-swiper-slide .card_img{
-  height: 35vh;
-  object-fit: cover;
-  width: 100%;
-}
 
 /* font -  */
 
