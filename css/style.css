@@ -79,11 +79,6 @@ html {
   border-radius: 20px;
 }
 
-.swiper3 .cardWrap .card_img img {
-  height: 35vh;
-  object-fit: cover;
-  width: 100%;
-}
 
 .cardWrap .brand-logo{
   position: absolute;
@@ -103,6 +98,8 @@ html {
 
 /* content 슬라이드부분 */
 
+
+
 .cardWrap .content-text-Wrap{
   position: absolute;
   bottom: 0;
@@ -117,8 +114,8 @@ html {
 }
 
 .contentcardsize{
-  width: 400px;
-  height: 315px;
+  width: 330px;
+  height: 260px;
   display: flex;
   
 }
@@ -131,6 +128,17 @@ html {
     line-height: 1;
     display: block;
     margin-top: 10px;
+}
+
+.swiper .swiper-slide.contents-swiper-slide{
+  width: 330px;
+  height: 260px;
+}
+
+.contents-swiper-slide .card_img{
+  height: 35vh;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* font -  */
@@ -265,14 +273,7 @@ body {
 }
 
 /* card */
-.cardWrap{
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 16px 0;
-  box-shadow: 0 0 10px black;
-}
+
 
 .cardWrap span{
     position: absolute;
@@ -335,6 +336,8 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 1);
   border-radius: 20px;
 }
+
+
 
 .swiper-button-prev:after, .swiper-button-next:after {
   content: "" !important;
