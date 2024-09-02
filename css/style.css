@@ -543,11 +543,9 @@ body {
   display: flex;
   z-index: 99;
   animation: open-floating-menu-1 .3s;
-  
 }
 
 .floating-menu {
-  /* width: 50px; */
   margin: 0 auto;
   padding: 8px 10px;
   background-color: var(--color-floating-menu);
@@ -555,7 +553,6 @@ body {
 }
 
 .floating-menu ul {
-  /* width: auto; */
   display: flex;
   gap: 8px;
 }
@@ -575,6 +572,12 @@ body {
   opacity: 0;
 
   animation: open-floating-menu-2 .5s .3s forwards;
+}
+
+@media (max-width: 960px) {
+  .floating-menu li {
+    gap: 3vw;
+  }
 }
 
 .floating-menu li a:hover {
@@ -660,5 +663,21 @@ body {
     width: 208px;
     opacity: 1;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+  @keyframes open-floating-menu-2 {
+    from {
+      width: 25px;
+      opacity: 0;
+      font-size: 0;
+    }
+  
+    to {
+      width: 30vw;
+      opacity: 1;
+      font-size: 3vw;
+    }
   }
 }
