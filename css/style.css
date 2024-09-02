@@ -28,6 +28,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   height: 100%;
 }
@@ -44,17 +45,11 @@ html {
   z-index: 1;
   padding: 4% 11.1% 2.2% 11.1%;
   padding: 5% 5%;
+    line-height: 1.41;
+  letter-spacing: -0.8px;
+
 }
 
-.contentcardsize{
-  width: 330px;
-  height: 260px;
-  display: flex;
-  
-}
-/* .cardWrap .content-textWrap .content-txt{
-  TODO : CONTENTS 부분 텍스트 폰트 디테일 채우기  
-} */
 
 .cardWrap .content-textWrap .content-date{
     font-size: 1.5vw;
@@ -73,6 +68,7 @@ html {
 
 body {
   font-family: Pretendard, apple-system, 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
+  overflow-x: hidden;
 }
 
 .content {
@@ -171,6 +167,9 @@ body {
 .brands-item .title {
   color: white;
 }
+.contents-item .title {
+  color: white;
+}
 
 .main-video {
   width: 100%;
@@ -245,6 +244,9 @@ body {
   padding: 10.2% 7% 10.2% 10.6%;
   background: rgba(0, 0, 0, 0.8);
   font-weight: 600;
+  font-size: 1.3vw;
+  line-height: 1.41;
+  letter-spacing: -0.8px;
 }
 
 .cardWrap .brand-logo{
