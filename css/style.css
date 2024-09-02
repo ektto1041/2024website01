@@ -15,8 +15,11 @@
   --font-size-card3-h1 : 35px;
   --font-size-card3-text : 1.6vw; /* 18.0992px */
   --font-size-card3-date : 1.5vw; /* 16.968pxs */
+
+  --color-main: #ede5da;
+  --color-black: #1e1e1e;
   
-  
+  --container-width: 1470px;
 }
 
 * {
@@ -29,117 +32,55 @@ html {
   height: 100%;
 }
 
-.container {
-  width: 1470px;
-  margin: 0 auto;
-  position: relative;
-}
-
-/* card */
-
-.cardWrap{
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: 16px 0;
-  box-shadow: 0 0 10px black;
-}
-
-.cardWrap .top{
-    color: white;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10.2% 7% 10.2% 10.6%;
-    background: rgba(0, 0, 0, 0.8);
-    font-weight: 600;
-    border-radius: 20px 20px 0 0;
-}
-
-.cardWrap span{
-    position: absolute;
-    color: white;
-    box-sizing: border-box;
-    z-index: 1;
-}
-
-.cardWrap img{
-  border-radius: 20px;
-}
-
-.swiper3 .cardWrap .card_img img {
-  height: 35vh;
-  object-fit: cover;
+/* content 슬라이드부분 */
+.cardWrap .content-text-Wrap{
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  font-weight: 600;
+  border-radius: 0 0 20px 20px;
+  z-index: 1;
+  padding: 4% 11.1% 2.2% 11.1%;
+  padding: 5% 5%;
 }
+
+.contentcardsize{
+  width: 330px;
+  height: 260px;
+  display: flex;
+  
+}
+/* .cardWrap .content-textWrap .content-txt{
+  TODO : CONTENTS 부분 텍스트 폰트 디테일 채우기  
+} */
+
+.cardWrap .content-textWrap .content-date{
+    font-size: 1.5vw;
+    line-height: 1;
+    display: block;
+    margin-top: 10px;
+}
+
+.swiper .swiper-slide.contents-swiper-slide{
+  width: 330px;
+  height: 260px;
+}
+
 
 /* font -  */
 
 body {
   font-family: Pretendard, apple-system, 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
-  /* height: 100%; */
 }
 
-.swiper-wrapper2 {
-  padding: 60px;
+.content {
+  background: linear-gradient(to bottom, #efe5d9 43.3%, #1e1e1e 0%);
+  padding-bottom: 225px;
 }
 
-.swiper-wrapper2 h3 {
-  font-size: var(--font-size-card1-h1);
-  padding-bottom: 26px;
-}
-
-.card {
-  /* width: 240px; */
-  /* height: 300px; */
-
-  border: 1px solid black;
-  border-radius: 16px;
-}
-
-.swiper {
-  width: 100%;
-  height: calc(100% + 30px);
-}
-
-.swiper-button-prev:after, .swiper-button-next:after {
-  content: "" !important;
-}
-
-.swiper-button-prev, .swiper-button-next {
-  width: 50px;
-  height: 50px;
-}
-
-.swiper-button-prev button, .swiper-button-next button {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-#left-button {
-  background: url(../images/ico_arr_left_50.png);
-  background-size: cover;
-}
-
-#right-button {
-  background: url(../images/ico_arr_right_50.png); 
-  background-size: cover;
-}
-
-/* .swiper:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
-  height: calc(100% + 30px);
-  background-color: #1e1e1e;
-  z-index: 2;
-} */
-
+/* Header */
 .hd {
   position: sticky;
   top: 0;
@@ -164,6 +105,7 @@ body {
     background: rgba(255, 255, 255, 0.4);
     box-sizing: border-box;
 }
+
 .hd .hd_maxWd {
     display: flex;
     flex-wrap: wrap;
@@ -365,3 +307,177 @@ body {
 .biz_wrap .biz_pos .biz_item a {font-weight:600;font-size:18px;line-height:1.55555;color:#e9e9e9}
 .biz_wrap.active .biz_pos {display:block}
 .biz_wrap.active .biz_btn::after {background-image:url('../images/web/icon/ico_arr_down_9.png')} */
+
+/* Visual */
+.visual {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.visual img {
+  width: 100%;
+  
+}
+
+/* Item */
+.item {
+  padding-top: 140px;
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.item .title {
+  padding-bottom: 2vw;
+
+  font-size: 2.6vw;
+  font-weight: bold;
+}
+
+.brands-item .title {
+  color: white;
+}
+
+.main-video {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.video-wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  padding-top: 56.2%;
+  border-radius: 35px;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.05);
+  transform: translate3d(0, 15px, 0);
+}
+
+.main-video .video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* card */
+.cardWrap{
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+}
+
+.cardWrap span{
+  position: absolute;
+  color: white;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.cardWrap:hover .card_img {
+  scale: 1.1;
+}
+
+.swiper-slide .card_img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardWrap .top{
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10.2% 7% 10.2% 10.6%;
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
+.cardWrap .brand-logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardWrap:hover .brand-card-img{
+  scale: 1.1;
+}
+
+.cardWrap .brand-card-img{
+  transition: all 0.4s;
+}
+
+/*  */
+
+.cardWrap .card_img {
+  transition: all 0.4s;
+}
+
+.cardWrap:hover .card_img {
+  scale: 1.1;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.swiper .swiper-slide {
+  width: 270px;
+  margin-right: 30px;
+  height: 430px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  content: "" !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 4vw;
+  height: 4vw;
+  border: none;
+}
+
+.swiper-button-prev {
+  background: url(../images/ico_arr_left_50.png);
+  background-size: cover;
+}
+
+.swiper-button-next {
+  background: url(../images/ico_arr_right_50.png); 
+  background-size: cover;
+}
+
+/* .swiper:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: calc(100% + 30px);
+  background-color: #1e1e1e;
+  z-index: 2;
+} */
