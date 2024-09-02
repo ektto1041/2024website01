@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,21 +14,37 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>ISEGAE FOOD</title>
 </head>
+
 <body>
   <header class="hd" style="height:70px">
     <div class="hd_inner">
       <div class="hd_maxWd">
         <h1 class="logo">
-          <a href>
-            <img src="./images/logo_b_277.png" alt="SHINSAGAE FOOD">
+          <a href="#">
+            <img src="./images/logo_b_277.png" alt="SHINSEGAE FOOD">
           </a>
         </h1>
+        <nav class="header_gnb">
+          <a href class="tog_btn">
+            <i class="bar"></i>
+          </a>
+        </nav>
+        <div class="header_util">
+          <ul class="util_list">
+            <li class="util_item"><a href="https://www.shinsegaefood.com/company/story/vision.sf">COMPANY</a></li>
+            <li class="util_item"><a href="https://www.shinsegaefood.com/business/v2/manufacturing.sf">BUSINESS</a></li>
+            <li class="util_item"><a href="https://www.shinsegaefood.com/csr/value.sf">ESG</a></li>
+            <li class="util_item"><a href="https://www.shinsegaefood.com/cs/voc.sf">고객지원</a></li>
+            <li class="util_item"><a href="https://www.shinsegaefood.com/recruit/recruit.sf">채용</a></li>
+          </ul>
+
+        </div>
         <div class="search">
-          <form name="form" id ="form" method="post" action="#">
-            <input id="search"  name="search" type ="text" class="ip_search">
-            <a href = "javascript:searchSubmit();" class="btn_search">
+          <form name="form" id="form" method="post" action="#">
+            <input id="search" name="search" type="text" class="ip_search">
+            <a href="javascript:searchSubmit();" class="btn_search">
               <span class="blind">검색하기</span>
-              </a>
+            </a>
           </form>
         </div>
       </div>
@@ -35,7 +54,6 @@
     <div class="visual">
       <img src="./images/bg_visual.png" alt="" />
     </div>
-
     <div class="item food-on-item">
       <h3 class="title">FOOD ON</h3>
       <div class="swiper swiper-food-on">
@@ -104,7 +122,7 @@
       <div class="swiper-button-next">
         <button id="right-button"></button>
       </div>
-  </div>
+    </div>
 
   </div>
       <div class="item">
@@ -294,14 +312,68 @@
           <button class="swiper-button-next"></button>
         </div>
       </div>
-    
+  
+      <div class="swiper-button-next">
+        <button id="right-button"></button>
+      </div>
+    </div>
+      <!-- 푸터 -->
+    <footer class="footer">
+      <div class="footer_info">
+        <div class="info_inner maxWd">
+          <<p class= "foorer_desc">
+            "더 나은 라이프스타일. " <br>
+            "신세계푸드에서 다양한 소식을 만나보세요. "
+          </p>
+          <div class="footer_util">
+            <ul class="util_list">
+              <li class="util_item naver"><a href="https://brand.naver.com/ssgfood" target="_blank">
+                <img src="./images/ico_sns_naver_39.png" alt="네이버 바로가기">
+              </a>
+            </li>
+              <li class="util_item ssg"><a href="https://shinsegaefood.blossom.ssg.com/">
+                <img src="./images/ico_sns_ssg_48.png" alt="SSG 바로가기">
+              </a></li>
+              <li class="util_item youtube"><a href="https://www.youtube.com/channel/UC9D4PXxFPeFphOT5a_MQm0w">
+                <img src="./images/ico_sns_youtube_45.png" alt="유튜브 바로가기">
+              </a>
+              </li>
+              <li class="util_item instagram"><a href="https://www.instagram.com/shinsegaefood.official/">
+                <img src="./images/ico_sns_instagram_45.png" alt="인스타그램 바로가기">
+              </a></li>
+            </ul>
+          </div>
+          <strong class="footer_company">주식회사 <em>신세계푸드</em></strong>
+          <dl class="info_item">
+            <dt class="blind">주소</dt>
+            <dd class="info_txt">서울시 성동구 성수일로 56 백영성수센터 4~7층</dd>
+            <dt class="info_ttl">문의 :</dt>
+            <dd class="info_txt">02-3397-6000</dd>
+            <dt class="info_ttl">팩스 :</dt>
+            <dd class="info_txt">02-3397-6199</dd>
+            <dt class="info_ttl">사업자등록번호 :</dt>
+            <dd class="info_txt">215-81-47377</dd>
+          </dl>
+          <small class="copyright">Copyright &copy; 2024 SHINSEGAE FOOD Inc. ALL RIGHTS RESERVED</small>
+        </div>
+      </div>
+    </footer>
 
-  <footer></footer>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js" integrity="sha512-LaBO0tZh1+6Ebk+EnHt/WsGM0UnmkCXfQ1rfhGmpa5MXUdslNuSSELBRcteHKz4k4ny+Op10Ax2fPoTNq+VcUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/slider.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>
