@@ -208,6 +208,11 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 10px black;
 }
+.brands-item .cardWrap{
+  display:flex;
+  width: 270px;
+  height: 430px;
+}
 
 .cardWrap span{
   position: absolute;
