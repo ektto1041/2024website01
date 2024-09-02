@@ -82,8 +82,8 @@ body {
 }
 
 .content {
-  background: linear-gradient(to bottom, #efe5d9 43.3%, #1e1e1e 0%);
-  padding-bottom: 225px;
+  background: linear-gradient(to bottom, #efe5d9 40%, #1e1e1e 0%);
+  padding-bottom: 125px;
 }
 
 /* Header */
@@ -166,7 +166,7 @@ body {
 .header_gnb .bar {
   display: block;
   position: relative;
-  width: 100%;
+  width: 39px;
   height: 3px;
   margin: 0 auto;
   background: #1e1e1e;
@@ -301,6 +301,10 @@ body {
 
   .tog_btn {
     row-gap: 3px;
+  }
+
+  .header_gnb .bar {
+    width: 100%;
   }
 
   .menus {
