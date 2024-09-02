@@ -29,6 +29,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   height: 100%;
 }
@@ -55,17 +56,11 @@ a {
   z-index: 1;
   padding: 4% 11.1% 2.2% 11.1%;
   padding: 5% 5%;
+  line-height: 1.41;
+  letter-spacing: -0.8px;
+
 }
 
-.contentcardsize{
-  width: 330px;
-  height: 260px;
-  display: flex;
-  
-}
-/* .cardWrap .content-textWrap .content-txt{
-  TODO : CONTENTS 부분 텍스트 폰트 디테일 채우기  
-} */
 
 .cardWrap .content-textWrap .content-date{
     font-size: 1.5vw;
@@ -84,6 +79,7 @@ a {
 
 body {
   font-family: Pretendard, apple-system, 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
+  overflow-x: hidden;
 }
 
 .content {
@@ -96,10 +92,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.8); 
-  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.4); 
   transition: background-color 0.3s ease; 
 }
+
 
 @media screen and (max-width: 1470px) {
   .header .header_inner {
@@ -112,7 +108,7 @@ body {
     height: 70px;
     margin: 0 auto;
     padding: 0 80px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
 }
 
@@ -135,6 +131,7 @@ body {
 }
 
 .hd_inner .header_gnb {
+  cursor: pointer;
   position: absolute;
   top: 50%; 
   left: 0; 
@@ -255,6 +252,7 @@ body {
   position: relative;
   font-weight: 700;
   font-size: 18px;
+  white-space: nowrap;
 }
 
 .util_item a:hover {
@@ -349,6 +347,9 @@ body {
 .brands-item .title {
   color: white;
 }
+.contents-item .title {
+  color: white;
+}
 
 .brands-item {
   margin-bottom: 60px;
@@ -406,6 +407,11 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 10px black;
 }
+.brands-item .cardWrap{
+  display:flex;
+  width: 270px;
+  height: 430px;
+}
 
 .cardWrap span{
   position: absolute;
@@ -438,6 +444,9 @@ body {
   padding: 10.2% 7% 10.2% 10.6%;
   background: rgba(0, 0, 0, 0.8);
   font-weight: 600;
+  font-size: 1.3vw;
+  line-height: 1.41;
+  letter-spacing: -0.8px;
 }
 
 .cardWrap .brand-logo{
